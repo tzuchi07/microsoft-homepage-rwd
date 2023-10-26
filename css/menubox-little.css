@@ -1,0 +1,68 @@
+@media(max-width:860px){
+    #menu:checked ~ .ham-menu ~ .menubox-little{
+        display:block;
+    }
+}
+.menubox-little{
+width:110%;
+background-color: white;
+position: absolute;
+top:54px;
+left:-5%;
+z-index: 120;
+}
+
+.little-choice{
+    width:100%;
+    /* height:; */
+    background-color:rgb(242,242,242);
+    margin-bottom:1px;
+    font-size: 15px;
+    padding:14px 24px 15px 15px;
+    color:black;
+}
+
+.sub-dropdown-menu{
+    display: block;
+    width:100%;
+    /* height:; */
+    background-color:rgb(242,242,242);
+    margin-bottom:1px;
+    font-size: 15px;
+    padding:14px 24px 15px 15px;
+    color:black;
+}
+.little-choice-2{
+    width:100%;
+    /* height:; */
+    background-color:rgb(242,242,242);
+    border-bottom:1px solid white;
+    font-size: 15px;
+    padding:14px 24px 15px 15px;
+    color:black;
+}
+
+
+.sub-menu:checked + .sub-dropdown-menu {
+ padding-bottom: 0;
+}  
+
+.sub-menu + .sub-dropdown-menu > div {
+    display:none;
+}     
+
+.sub-menu:checked + .sub-dropdown-menu > div {
+    display:block;
+}
+
+.sub-menu:checked + .sub-dropdown-menu > .fa-solid{
+    transform:rotate(180deg);
+}
+
+.fa-solid{
+    float:right;
+}
+
+.little-choice:focus, .sub-dropdown-menu:focus, .little-choice-2:focus{
+border:1px dashed black;
+}

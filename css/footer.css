@@ -1,0 +1,174 @@
+.footer{
+    width:100%;
+    background-color:rgb(242,242,242) ;
+    color: #616161;
+    padding-bottom: 25px;
+
+}
+.footer-container,.base{
+    width:90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer-little{
+    width:15%;
+    
+}
+
+@media (max-width:1084px){
+
+    .footer-container{
+    flex-wrap:wrap;
+
+    }
+    .footer-little{
+        width:30%;
+    }
+    
+}
+@media (max-width:540px){
+
+    .footer-little{
+        width:100%;
+        }
+
+
+}
+
+
+
+
+.footer-little > ul {
+   font-size: smaller;
+   font-size: 15px;
+   font-weight: 600;
+   line-height:20px ;
+   padding: 36px 0 4px;
+}
+
+.footer-little  > ul li {
+    list-style-type:none;
+    font-size: 11px;
+    line-height: 16px;
+    padding: 8px 0px;
+    font-weight: 400;
+}
+.base{
+    justify-content: space-between;
+    align-items: center;
+    font-size: 11px;
+    line-height: 16px;
+    padding: 30px 0px 0px;
+    font-weight: 400;
+    
+
+}
+
+
+.language{
+    width:90px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.language i{
+    font-size: 20px;
+}
+
+.private{
+    width:110px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 3px;
+    margin-left: 10px;
+    
+}
+.private span{
+    padding-top: 5.5px;
+}
+
+.private img{
+    margin-top: 4px;
+    width: 33.5px;
+    height: 16px;
+}
+.footer-nav{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+.footer-nav ul{
+    width:calc(100% - 200px);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.footer-nav  > ul  li {
+    list-style-type:none;
+    margin-left: 16px;
+}
+
+.footer-nav  > ul a {
+    text-decoration: none;
+    color:#616161;
+    
+}
+.footer-nav  > ul a:hover {
+    color:black;
+    text-decoration: underline;
+}
+
+.base  >  a {
+    color:#616161;
+    text-decoration: none;
+}
+
+.base  >  a:hover {
+    color:black;
+    text-decoration: underline;
+}
+@media (max-width:1084px){
+    .base{
+    display: block;
+    }
+    .base > div ul{
+        width: 100%;
+    }
+    .private{
+    margin-left:0px;
+    }
+    .base > a, base > div{
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width:766px){
+    .footer-nav{
+    display: flex;
+    justify-content:start;
+    flex-wrap: wrap;
+     
+}
+.footer-nav ul{
+    width:100%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: -40px;
+    flex-wrap: wrap;
+}
+.footer-nav  > ul  li {
+    margin-left: 0px;
+    margin-right: 10px;
+    margin-bottom: 6px;
+}
+
+
+}
+
